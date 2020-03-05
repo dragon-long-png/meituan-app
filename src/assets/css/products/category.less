@@ -1,0 +1,131 @@
+.m-product-category {
+  background: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+
+  .filter-section-wrapper {
+    padding-bottom: 15px;
+
+    .classic {
+      padding: 15px 20px 0px;
+      display: flex;
+      flex-wrap: wrap;
+
+      &:first-of-type::after{
+        content: '';
+        width: 80%;
+        height: 1px;
+        background-color: #e5e5e5;
+        display: block;
+        margin-left: 167px;
+      }
+
+      dt {
+        position: relative;
+      }
+
+      dt:first-of-type {
+        width: 80px;
+      }
+
+      dt:nth-of-type(2) {
+        border-radius: 100px;
+        background: linear-gradient(to bottom right, #FFD000, #FFBD00);
+        color: #222222;
+        padding: 0 10px;
+        height: 22px;
+        line-height: 22px;
+      }
+
+      >dd{
+        cursor: pointer;
+
+        &:first-of-type{
+          margin-left: 40px;
+        }
+      }
+      .m-product-select {
+        padding-bottom: 5px;
+        min-width: 120px;
+
+        .tab {
+          position: relative;
+
+          dt {
+            font-size: 14px;
+            line-height: 24px;
+
+            &.select-title {
+              color: #ccc;
+            }
+          }
+
+          dd {
+            &:before {
+              content: ' ';
+              position: absolute;
+              display: block;
+              width: 0;
+              height: 0;
+              border-color: transparent transparent #E5E5E5;
+              border-style: solid;
+              border-width: 5px;
+              top: -11px;
+            }
+
+            &:after {
+              content: ' ';
+              position: absolute;
+              top: -8px;
+              left: 16px;
+              display: block;
+              width: 0;
+              height: 0;
+              border-color: transparent transparent #fff;
+              border-style: solid;
+              border-width: 4px;
+            }
+
+            display: none;
+            top: 24px;
+            width: 510px;
+            background: #fff;
+            position: absolute;
+            cursor: auto;
+            user-select: text;
+            white-space: normal;
+            font-size: 12px;
+            text-align: left;
+            border: 1px solid #E5E5E5;
+            border-radius: 4px;
+            padding: 19px 15px 9px;
+
+            span {
+              display: inline-block;
+              min-width: 120px;
+              line-height: 1.5;
+              font-weight: 500;
+            }
+
+            h3 {
+              color: #ccc;
+              font-size: 16px;
+              margin-bottom: 11px;
+            }
+          }
+
+          &:hover {
+            dd {
+              display: block;
+              z-index: 999;
+            }
+          }
+        }
+      }
+    }
+  }
+}

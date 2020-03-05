@@ -1,0 +1,386 @@
+.page-details {
+  width: 1190px;
+  margin: 50px auto 0;
+
+  .food-title {
+    font-size: 12px;
+    color: #666;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 20px 33px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+    display: flex;
+    flex-direction: row;
+
+    .food-info {
+      flex: 2;
+      padding-right: 20px;
+
+      .name {
+        font-size: 26px;
+        line-height: 37px;
+      }
+
+      .scores {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        height: 14px;
+        margin: 6px 0 17px;
+      }
+
+      .address {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 16px 0 11px;
+
+        p {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 10px;
+
+          .el-icon-location {
+            color: rgb(50, 206, 186);
+          }
+        }
+      }
+
+      .tags {
+        padding-top: 20px;
+        display: flex;
+
+        li {
+          margin-right: 16px;
+          line-height: 17px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            margin: auto auto 11px;
+            width: 24px;
+            height: 24px;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+
+    .food-poster {
+      flex: 1;
+      overflow: hidden;
+      cursor: pointer;
+
+      .top {
+        width: 100%;
+        height: 214px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+
+      .bottom {
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        li {
+          width: 92px;
+          height: 50px;
+          overflow: hidden;
+          border-radius: 4px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+    padding-top: 40px;
+    color: #222222;
+    display: flex;
+    justify-content: space-between;
+
+    .main {
+      flex: 4;
+      margin-right: 10px;
+
+      h3 {
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 8px;
+      }
+
+      .discount {
+        .need-login {
+          padding: 30px 0;
+          margin-bottom: 40px;
+          text-align: center;
+          background-color: #fff;
+          border: 1px solid #e5e5e5;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img {
+            width: 160px;
+            height: 120px;
+          }
+
+          >span {
+            margin: 10px 0 14px;
+            color: #666;
+            font-size: 16px;
+            line-height: 26px;
+          }
+
+          .el-button {
+            width: 120px;
+            height: 40px;
+            font-size: 14px;
+            line-height: 40px;
+            background-color: #13D1BE;
+            padding: 0;
+            cursor: pointer;
+            transition: background .6s ease;
+
+            a {
+              color: #fff;
+            }
+          }
+
+          .deal-items {
+            .items {
+              cursor: pointer;
+              border-radius: 4px;
+              padding: 6px 0 8px;
+              &:hover {
+                background-color: #F8F8F8;
+                .deal-title {
+                  color: #fe8c00;
+                }
+              }
+              .deal-title {
+                font-size: 14px;
+                line-height: 20px;
+              }
+              .deal-price {
+                font-size: 15px;
+                color: #f60;
+                margin-right: 10px;
+              }
+              .deal-old-price {
+                font-size: 12px;
+                color: #999;
+                margin-right: 10px;
+              }
+              .deal-sales {
+                font-size: 12px;
+                color: #999;
+              }
+            }
+          }
+        }
+      }
+
+      .food-recommend {
+        overflow: hidden;
+        margin-bottom: 40px;
+
+        .cont {
+          border: 1px solid #e5e5e5;
+          background-color: #fff;
+          padding: 33px 32px 26px;
+          border-radius: 4px;
+
+          >ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+              position: relative;
+              width: 130px;
+
+              .imgBox {
+                height: 130px;
+                border-radius: 4px;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 4px;
+                }
+              }
+
+              .desc {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                font-size: 14px;
+                width: 100%;
+                background: rgba(0, 0, 0, .3);
+                padding: 8px 0;
+                text-align: center;
+                color: #fff;
+                display: flex;
+                justify-content: space-around;
+
+                >span {
+                  vertical-align: bottom;
+                  max-width: 60%;
+                  display: inline-block;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
+
+          .list {
+            padding: 25px 0 0 6px;
+
+            >span {
+              display: block;
+              float: left;
+              margin: 0 20px 19px 0;
+              font-size: 16px;
+              line-height: 20px;
+              color: #333;
+            }
+
+            &.clear::after {
+              clear: both;
+              content: '';
+              display: block;
+              width: 0;
+              height: 0;
+            }
+          }
+        }
+      }
+
+      .comment {
+        margin-bottom: 40px;
+
+        .total {
+          display: flex;
+          justify-content: space-between;
+
+          .tit {
+            font-size: 20px;
+            line-height: 26px;
+          }
+
+          .sort {
+            span {
+              font-size: 12px;
+              margin-left: 20px;
+
+              &.active {
+                color: #00c9b3;
+              }
+            }
+          }
+        }
+
+        .com-cont {
+          margin-top: 8px;
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 4px;
+          padding: 0 20px 40px;
+          color: #666;
+
+          .list {
+            padding: 30px 0 0;
+            display: flex;
+
+            .header {
+              width: 60px;
+              height: 60px;
+              border-radius: 50%;
+              overflow: hidden;
+              background-color: #f8f8f8;
+
+              img {
+                width: 60px;
+                height: 60px;
+                border: 50%;
+              }
+            }
+
+            .info {
+              padding-left: 20px;
+              width: 828px;
+
+              .name {
+                font-size: 16px;
+                color: #222;
+                line-height: 22px;
+                margin-bottom: 1px;
+              }
+
+              .rate {
+                line-height: 14px;
+                margin-top: 3px;
+                height: 16px;
+                font-size: 11px;
+              }
+
+              .evalaute {
+                font-size: 14px;
+                line-height: 20px;
+                padding-top: 13px;
+              }
+
+              .pics {
+                padding-top: 10px;
+                position: static;
+                background: #fff;
+                overflow: hidden;
+                cursor: pointer;
+                display: flex;
+
+                .thumbnails {
+                  width: 160px;
+                  height: 160px;
+                  margin-right: 0;
+                  border: 10px solid #fff;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              .line {
+                height: 1px;
+                overflow: hidden;
+                border-bottom: 1px solid #e5e5e5;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .like {
+      flex: 1;
+      padding-top: 24px;
+    }
+  }
+}

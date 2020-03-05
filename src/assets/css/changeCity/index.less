@@ -1,0 +1,36 @@
+.m-page-city{
+  width: 1190px;
+  margin: 20px auto 0;
+  padding: 50px 0 0;
+  box-sizing: border-box;
+  .cont{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+    min-height: 1000px;
+    .el-row {
+      padding-bottom: 20px;
+      .province{
+        display: flex;
+      }
+      .name{
+        font-size: 16px;
+        color: #333;
+        font-weight: 500;
+        line-height: 40px;
+      }
+      .search{
+        margin-left: 40px;
+      }
+      &:not(:last-of-type):after{
+        content: ' ';
+        height: 1px;
+        width: 100%;
+        border-bottom: 1px solid #E5E5E5;
+        padding-top: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,180 @@
+.m-life{
+  .nav{
+    display: flex;
+    margin-left: 10px;
+    li{
+      margin: 0 20px;
+      a{
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #222;
+      }
+      &:nth-of-type(1) a:hover{
+        color: #fbc700;
+      }
+
+      &:nth-of-type(2) a:hover{
+        color: #ed1e24;
+      }
+
+      &:nth-of-type(3) a:hover,
+      &:nth-of-type(6) a:hover{
+        color: #f04d4e;
+      }
+
+      &:nth-of-type(4) a:hover{
+        color: #FDC411;
+      }
+
+      &:nth-of-type(5) a:hover{
+        color: #FE8C00;
+      }
+    }
+  }
+
+  .slide{
+    .m-slider{
+      margin:10px 10px 10px 0px;
+      img{
+        width: 100%;
+        height: 240px;
+      }
+    }
+
+    .m-life-pic{
+      margin:10px 10px 10px 0px;
+      width:150px;
+      height:240px;
+      background:url(//p0.meituan.net/codeman/e473bb428f070321269b23370ff02ba956209.jpg);
+      background-size:150px;
+    }
+    .m-life-login{
+      margin:10px 0 10px 3px;
+      box-sizing:border-box;
+      height:240px;
+      width: 228px;
+      background:#fff;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top:30px;
+      border: 1px solid #e5e5e5;
+
+      .el-icon-setting{
+        color: #666;
+        display: block;
+        text-align: right;
+        width: 95%;
+        font-size: 24px;
+        margin-top: -20px;
+      }
+
+      img{
+        width: 47px;
+        height: 47px;
+        border-radius: 50%;
+        border: 4px solid #E5E5E5;
+        margin-bottom: 4px;
+      }
+
+      .mine{
+        padding: 0 15px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        a{
+          width: 33%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          span{
+            margin: 5px 0;
+          }
+          i{
+            color: #ffc300;
+            font-size: 24px;
+          }
+        }
+      }
+
+      .m-life-login-name {
+        font-size: 16px;
+        color: #222;
+        text-align: center;
+        font-weight: 500;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin: 4px auto;
+        width: 6em;
+        height: 30px;
+        overflow: hidden;
+      }
+
+      button{
+        width: 118px;
+        margin: 8px 5px;
+      }
+    }
+  }
+
+  .poster{
+    .m-life-hotel,
+    .m-life-learn{
+      height: 165px;
+      background:url(http://p1.meituan.net/codeman/8cce56c467a17e04f3094d1e455462a0132772.png);
+      background-size: 270px;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
+    .m-life-learn{
+      background: url(http://p1.meituan.net/codeman/16442c19da1f1c4544f794e29d99c92051716.jpg);
+    }
+    .m-life-business{
+      background: url(//p1.meituan.net/codeman/5b21cddb4bb1cbc3a9c3bce0f726c75940469.jpg);
+      width: 150px;
+      height: 165px;
+      background-size: 150px;
+    }
+    .m-life-downapp{
+      background:#fff;
+      margin:0 0 10px 3px;
+      width: 228px;
+      height:165px;
+      text-align:center;
+      border: 1px solid #e5e5e5;
+
+      img {
+        width: 95px;
+        height: 95px;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        color: #222;
+        font-weight: 500;
+      }
+
+      .last-p {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 2px;
+
+        span {
+          color: #EC5330;
+          margin-right: 5px;
+        }
+
+        em {
+          color: #3f3f3f;
+          font-style: normal;
+        }
+      }
+    }
+  }
+
+}

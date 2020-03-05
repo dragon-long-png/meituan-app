@@ -1,0 +1,204 @@
+@org: #FE8C00;
+
+.nav-container {
+  height: 40px;
+  line-height: 40px;
+
+  .m-geo {
+    display: flex;
+
+    .m-position {
+      .icon {
+        font-size: 14px;
+      }
+
+      .city {
+        background: #F4F4F4;
+        border: 1px solid #E5E5E5;
+        border-radius: 2px;
+        color: #666;
+        margin: 0 4px;
+        padding: 0 2px;
+
+        &:hover {
+          color: @org;
+          font-weight: 400;
+        }
+      }
+
+      .mouse-hover {
+        margin: 0 2px;
+
+        &:hover {
+          color: @org;
+        }
+      }
+    }
+
+    .m-user {
+      margin-left: 15px;
+
+      .login {
+        color: @org;
+      }
+
+      .register {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .nav-lists {
+    ul {
+      li {
+        float: left;
+        padding: 0 14px;
+        border-left: 1px solid transparent;
+        border-right: 1px solid transparent;
+        z-index: 99;
+        position: relative;
+
+        a {
+          &:hover {
+            color: @org;
+          }
+        }
+
+        >dl {
+          position: absolute;
+          right: -1px;
+          top: 95%;
+          box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+          display: none;
+          border: 1px solid #E5E5E5;
+          z-index: 100;
+          background-color: #fff;
+
+          dd {
+            text-align: center;
+          }
+        }
+
+        &.my:hover,
+        &.rules:hover {
+          background-color: #fff;
+          border-color: #E5E5E5;
+
+          >dl {
+            width: 100%;
+            display: block;
+            border-top: none;
+          }
+        }
+
+        &.business:hover {
+          background-color: #fff;
+          border-color: #E5E5E5;
+
+          >dl {
+            width: 140%;
+            display: block;
+
+            &::before {
+              content: " ";
+              display: block;
+              background: #fff;
+              height: 4px;
+              width: 76px;
+              position: absolute;
+              top: -1px;
+              right: 0;
+            }
+          }
+        }
+
+        &.web-navs:hover {
+          background-color: #fff;
+          border-color: #E5E5E5;
+
+          >.navs {
+            display: block;
+            box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+
+            &::before {
+              content: " ";
+              display: block;
+              background: #fff;
+              height: 4px;
+              width: 76px;
+              position: absolute;
+              top: -1px;
+              right: 0;
+            }
+          }
+        }
+
+        .navs {
+          width: 1190px;
+          position: absolute;
+          z-index: 100;
+          top: 95%;
+          padding: 30px 36px 36px 47px;
+          box-sizing: border-box;
+          border: 1px solid #e5e5e5;
+          right: -1px;
+          display: none;
+          background-color: #fff;
+          border-bottom-left-radius: 4px;
+          border-bottom-right-radius: 4px;
+
+          >dl {
+            display: inline-block;
+            margin-right: 47px;
+            font-size: 0;
+            line-height: 28px;
+            vertical-align: top;
+
+            dt {
+              margin-bottom: 26px;
+              font-size: 14px;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            dd {
+              width: 78px;
+              display: inline-block;
+              text-align: center;
+              white-space: nowrap;
+              font-size: 12px;
+            }
+
+            &.hotel {
+              width: 234px;
+            }
+
+            &.food {
+              width: 156px;
+            }
+
+            &.movie {
+              width: 80px;
+            }
+
+            &.app {
+              width: 390px;
+
+              a {
+                img {
+                  width: 60px;
+                  height: 60px;
+                  border: 0;
+                }
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}
